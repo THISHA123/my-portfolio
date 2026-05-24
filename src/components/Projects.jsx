@@ -1,87 +1,61 @@
 import { useState } from 'react';
 import './Projects.css';
 
-const categories = ['All', 'Web App', 'Mobile', 'UI/UX'];
+const categories = ['All', 'Graphic Design'];
 
 const projects = [
   {
     id: 1,
-    title: 'CampusConnect',
-    category: 'Web App',
-    description: 'A full-stack campus lost & found platform with real-time notifications, authentication, and admin dashboard. Built with React and Node.js.',
-    image: null,
+    title: 'Creative Poster 1',
+    category: 'Graphic Design',
+    description: 'A creative poster design showcasing visual communication and layout skills.',
+    image: '/poster1.jpeg',
     color: '#7c3aed',
-    emoji: '🎓',
-    tech: ['React', 'Node.js', 'MongoDB', 'Express'],
+    emoji: '🎨',
+    tech: ['Graphic Design', 'Visuals'],
     github: 'https://github.com/THISHA123',
-    live: 'https://example.com',
+    live: '/poster1.jpeg',
     featured: true,
   },
   {
     id: 2,
-    title: 'UniMerch Shop',
-    category: 'Web App',
-    description: 'An e-commerce platform for university merchandise with shopping cart, payment gateway, and product management system.',
-    image: null,
+    title: 'Creative Poster 2',
+    category: 'Graphic Design',
+    description: 'Event poster designed for community engagement, focusing on modern aesthetics.',
+    image: '/poster2.jpeg',
     color: '#2563eb',
-    emoji: '🛒',
-    tech: ['React', 'Tailwind', 'Node.js', 'Stripe'],
+    emoji: '🎨',
+    tech: ['Posters', 'Typography'],
     github: 'https://github.com/THISHA123',
-    live: 'https://example.com',
+    live: '/poster2.jpeg',
     featured: true,
   },
   {
     id: 3,
-    title: 'Portfolio v2',
-    category: 'UI/UX',
-    description: 'Personal portfolio website with dark mode, smooth animations, typewriter effect, and a fully responsive design.',
-    image: null,
+    title: 'Creative Poster 3',
+    category: 'Graphic Design',
+    description: 'Promotional poster with vibrant colors, created for showcasing events.',
+    image: '/poster3.jpeg',
     color: '#06b6d4',
-    emoji: '✨',
-    tech: ['React', 'CSS', 'Vite', 'Framer Motion'],
+    emoji: '🎨',
+    tech: ['Illustrator', 'Design'],
     github: 'https://github.com/THISHA123',
-    live: '#',
+    live: '/poster3.jpeg',
     featured: false,
   },
   {
     id: 4,
-    title: 'Task Manager App',
-    category: 'Mobile',
-    description: 'A cross-platform task management app with drag & drop, categories, priorities, and offline support.',
-    image: null,
+    title: 'Creative Poster 4',
+    category: 'Graphic Design',
+    description: 'Another graphic design piece focusing on layout and visual hierarchy.',
+    image: '/poster4.jpeg',
     color: '#ec4899',
-    emoji: '📱',
-    tech: ['React Native', 'Firebase', 'Redux'],
+    emoji: '🎨',
+    tech: ['Photoshop', 'Art'],
     github: 'https://github.com/THISHA123',
-    live: 'https://example.com',
+    live: '/poster4.jpeg',
     featured: false,
-  },
-  {
-    id: 5,
-    title: 'Weather Dashboard',
-    category: 'Web App',
-    description: 'Real-time weather dashboard with 5-day forecasts, location search, and dynamic backgrounds based on conditions.',
-    image: null,
-    color: '#f59e0b',
-    emoji: '🌤️',
-    tech: ['React', 'OpenWeather API', 'Chart.js'],
-    github: 'https://github.com/THISHA123',
-    live: 'https://example.com',
-    featured: false,
-  },
-  {
-    id: 6,
-    title: 'Chat Application',
-    category: 'Web App',
-    description: 'Real-time chat app with rooms, direct messaging, emoji reactions, and online status indicators.',
-    image: null,
-    color: '#22c55e',
-    emoji: '💬',
-    tech: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
-    github: 'https://github.com/THISHA123',
-    live: 'https://example.com',
-    featured: false,
-  },
+  }
 ];
 
 export default function Projects() {
@@ -127,9 +101,13 @@ export default function Projects() {
             >
               {/* Card Image / Preview */}
               <div className="projects__card-preview">
-                <div className="projects__card-bg" style={{ background: `linear-gradient(135deg, ${project.color}22, ${project.color}44)` }}>
-                  <span className="projects__card-emoji">{project.emoji}</span>
-                </div>
+                {project.image ? (
+                  <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                ) : (
+                  <div className="projects__card-bg" style={{ background: `linear-gradient(135deg, ${project.color}22, ${project.color}44)` }}>
+                    <span className="projects__card-emoji">{project.emoji}</span>
+                  </div>
+                )}
                 {project.featured && (
                   <span className="projects__featured-badge">⭐ Featured</span>
                 )}
