@@ -6,55 +6,16 @@ const categories = ['All', 'Graphic Design'];
 const projects = [
   {
     id: 1,
-    title: 'Creative Poster 1',
+    title: 'Graphic Design Collection',
     category: 'Graphic Design',
-    description: 'A creative poster design showcasing visual communication and layout skills.',
-    image: '/poster1.jpeg',
+    description: 'A collection of creative posters and designs for various events and communities.',
+    images: ['/poster1.jpeg', '/poster2.jpeg', '/poster3.jpeg', '/poster4.jpeg'],
     color: '#7c3aed',
     emoji: '🎨',
-    tech: ['Graphic Design', 'Visuals'],
+    tech: ['Graphic Design', 'Visuals', 'Posters', 'Typography'],
     github: 'https://github.com/THISHA123',
-    live: '/poster1.jpeg',
+    live: '#',
     featured: true,
-  },
-  {
-    id: 2,
-    title: 'Creative Poster 2',
-    category: 'Graphic Design',
-    description: 'Event poster designed for community engagement, focusing on modern aesthetics.',
-    image: '/poster2.jpeg',
-    color: '#2563eb',
-    emoji: '🎨',
-    tech: ['Posters', 'Typography'],
-    github: 'https://github.com/THISHA123',
-    live: '/poster2.jpeg',
-    featured: true,
-  },
-  {
-    id: 3,
-    title: 'Creative Poster 3',
-    category: 'Graphic Design',
-    description: 'Promotional poster with vibrant colors, created for showcasing events.',
-    image: '/poster3.jpeg',
-    color: '#06b6d4',
-    emoji: '🎨',
-    tech: ['Illustrator', 'Design'],
-    github: 'https://github.com/THISHA123',
-    live: '/poster3.jpeg',
-    featured: false,
-  },
-  {
-    id: 4,
-    title: 'Creative Poster 4',
-    category: 'Graphic Design',
-    description: 'Another graphic design piece focusing on layout and visual hierarchy.',
-    image: '/poster4.jpeg',
-    color: '#ec4899',
-    emoji: '🎨',
-    tech: ['Photoshop', 'Art'],
-    github: 'https://github.com/THISHA123',
-    live: '/poster4.jpeg',
-    featured: false,
   }
 ];
 
@@ -101,7 +62,13 @@ export default function Projects() {
             >
               {/* Card Image / Preview */}
               <div className="projects__card-preview">
-                {project.image ? (
+                {project.images ? (
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4px', height: '100%', padding: '4px', boxSizing: 'border-box' }}>
+                    {project.images.slice(0, 4).map((img, idx) => (
+                      <img key={idx} src={img} alt={`${project.title} ${idx + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }} />
+                    ))}
+                  </div>
+                ) : project.image ? (
                   <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 ) : (
                   <div className="projects__card-bg" style={{ background: `linear-gradient(135deg, ${project.color}22, ${project.color}44)` }}>
