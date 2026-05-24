@@ -1,11 +1,24 @@
 import { useState } from 'react';
 import './Projects.css';
 
-const categories = ['All', 'Graphic Design'];
+const categories = ['All', 'Graphic Design', 'Web App'];
 
 const projects = [
   {
     id: 1,
+    title: 'EduFlow-Registry',
+    category: 'Web App',
+    description: 'A full-featured Course Registration System developed as a team. From JWT auth to dashboards and automated PDFs - turned ideas into a working product!',
+    image: './webapp1.png',
+    color: '#2563eb',
+    emoji: '🎓',
+    tech: ['MERN Stack', 'JWT Auth', 'Automated PDFs'],
+    github: 'https://github.com/THISHA123/EduFlow-Registry/',
+    live: '#',
+    featured: true,
+  },
+  {
+    id: 2,
     title: 'Graphic Design Collection',
     category: 'Graphic Design',
     description: 'A collection of creative posters and designs for various events and communities.',
