@@ -6,6 +6,12 @@ const education = [
     school: '',
     year: '2023 - Present',
     icon: '🎓',
+  },
+  {
+    degree: 'G.C.E. Advanced Level — Physical Science',
+    school: 'Secondary education',
+    year: '2021',
+    icon: '🏫',
   }
 ];
 
