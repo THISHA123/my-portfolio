@@ -44,8 +44,8 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#home" className="navbar__logo" onClick={() => handleNavClick('#home')}>
           <span className="navbar__logo-bracket">&lt;</span>
-          <span className="navbar__logo-name">Alex</span>
-          <span className="navbar__logo-dot gradient-text">Dev</span>
+          <span className="navbar__logo-name">Thamil</span>
+          <span className="navbar__logo-dot gradient-text">selvam</span>
           <span className="navbar__logo-bracket">/&gt;</span>
         </a>
 

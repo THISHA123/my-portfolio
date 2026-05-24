@@ -1,5 +1,5 @@
 import './About.css';
-
+import profileImg from '../assets/my1.jpeg';
 const education = [
   {
     degree: 'BSc in Computer Science',
@@ -17,19 +17,12 @@ const education = [
 
 const experience = [
   {
-    role: 'Junior Full Stack Developer',
-    company: 'Digital Agency Co.',
-    year: '2024 - Present',
-    description: 'Building scalable web apps with React and Node.js for clients worldwide.',
+    role: 'Aspiring Full Stack Developer',
+    company: 'Open for Hire',
+    year: 'Present',
+    description: 'Enthusiastic to learn and apply modern web technologies. Ready to contribute and grow in a professional environment.',
     icon: '💼',
-  },
-  {
-    role: 'Frontend Developer Intern',
-    company: 'StartUp Labs',
-    year: '2023 - 2024',
-    description: 'Developed responsive UI components and improved performance by 40%.',
-    icon: '🚀',
-  },
+  }
 ];
 
 const interests = ['☕ Coffee Lover', '🎮 Gaming', '📸 Photography', '🌏 Travelling', '🎵 Music', '📖 Reading'];
@@ -49,14 +42,14 @@ export default function About() {
           {/* Bio Card */}
           <div className="about__bio glass">
             <div className="about__bio-img">
-              <img src="/profile.png" alt="Alex Johnson" />
+              <img src={profileImg} alt="Thamilselvam Thishanthani" />
               <div className="about__bio-badge">
                 <span>🧑‍💻</span>
                 <span>Dev</span>
               </div>
             </div>
             <div className="about__bio-info">
-              <h3>Alex Johnson</h3>
+              <h3>Thamilselvam Thishanthani</h3>
               <p className="about__bio-role gradient-text">Full Stack Developer</p>
               <div className="about__bio-details">
                 <div className="about__bio-detail">
@@ -64,7 +57,7 @@ export default function About() {
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
                     <circle cx="12" cy="10" r="3"/>
                   </svg>
-                  <span>Colombo, Sri Lanka</span>
+                  <span>Badulla, Sri Lanka</span>
                 </div>
                 <div className="about__bio-detail">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -78,7 +71,7 @@ export default function About() {
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                     <polyline points="22,6 12,13 2,6"/>
                   </svg>
-                  <span>alex@example.com</span>
+                  <span>thishanthani09@gmail.com</span>
                 </div>
               </div>
 

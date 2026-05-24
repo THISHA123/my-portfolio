@@ -10,8 +10,8 @@ const contactInfo = [
       </svg>
     ),
     label: 'Email',
-    value: 'alex@example.com',
-    href: 'mailto:alex@example.com',
+    value: 'thishanthani09@gmail.com',
+    href: 'mailto:thishanthani09@gmail.com',
     color: '#ec4899',
   },
   {
@@ -33,8 +33,8 @@ const contactInfo = [
       </svg>
     ),
     label: 'Location',
-    value: 'Colombo, Sri Lanka',
-    href: 'https://maps.google.com/?q=Colombo,Sri+Lanka',
+    value: 'Badulla, Sri Lanka',
+    href: 'https://maps.google.com/?q=Badulla,Sri+Lanka',
     color: '#06b6d4',
   },
   {
@@ -44,8 +44,8 @@ const contactInfo = [
       </svg>
     ),
     label: 'LinkedIn',
-    value: 'linkedin.com/in/alexjohnson',
-    href: 'https://linkedin.com',
+    value: 'linkedin.com/in/thamilselvam-thishanthani-89a221293',
+    href: 'https://www.linkedin.com/in/thamilselvam-thishanthani-89a221293',
     color: '#2563eb',
   },
 ];
@@ -134,7 +134,7 @@ export default function Contact() {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="Alex Johnson"
+                    placeholder="Thamilselvam Thishanthani"
                     required
                   />
                 </div>
@@ -146,7 +146,7 @@ export default function Contact() {
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="alex@example.com"
+                    placeholder="thishanthani09@gmail.com"
                     required
                   />
                 </div>
