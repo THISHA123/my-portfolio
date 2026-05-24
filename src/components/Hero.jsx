@@ -46,7 +46,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="hero__badge">
             <span className="hero__badge-dot"></span>
-            Available for Work
+            Open to internships & junior roles (remote or Sri Lanka)
           </div>
 
           {/* Greeting */}
