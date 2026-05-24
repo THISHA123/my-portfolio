@@ -21,8 +21,8 @@ const contactInfo = [
       </svg>
     ),
     label: 'Phone',
-    value: '+94 71 234 5678',
-    href: 'tel:+94712345678',
+    value: '+94 75 687 90 65',
+    href: 'tel:+94756879065',
     color: '#22c55e',
   },
   {
