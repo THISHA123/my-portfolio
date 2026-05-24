@@ -2,17 +2,11 @@ import './About.css';
 import profileImg from '../assets/my1.jpeg';
 const education = [
   {
-    degree: 'BSc in Computer Science',
-    school: 'Tech University',
-    year: '2020 - 2024',
+    degree: 'BSc in Information Technology',
+    school: '',
+    year: '2023 - Present',
     icon: '🎓',
-  },
-  {
-    degree: 'Higher National Diploma - IT',
-    school: 'City College',
-    year: '2018 - 2020',
-    icon: '📚',
-  },
+  }
 ];
 
 const experience = [
