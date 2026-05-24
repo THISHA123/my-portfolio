@@ -9,7 +9,7 @@ const projects = [
     title: 'Graphic Design Collection',
     category: 'Graphic Design',
     description: 'A collection of creative posters and designs for various events and communities.',
-    images: ['/poster1.jpeg', '/poster2.jpeg', '/poster3.jpeg', '/poster4.jpeg'],
+    images: ['./poster1.jpeg', './poster2.jpeg', './poster3.jpeg', './poster4.jpeg'],
     color: '#7c3aed',
     emoji: '🎨',
     tech: ['Graphic Design', 'Visuals', 'Posters', 'Typography'],
