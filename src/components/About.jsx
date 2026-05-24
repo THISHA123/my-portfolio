@@ -9,13 +9,36 @@ const education = [
   }
 ];
 
-const experience = [
+const leadership = [
   {
-    role: 'Aspiring Full Stack Developer',
-    company: 'Open for Hire',
-    year: 'Present',
-    description: 'Enthusiastic to learn and apply modern web technologies. Ready to contribute and grow in a professional environment.',
-    icon: '💼',
+    role: 'Designing Team',
+    organization: 'IEEE',
+    icon: '🎨',
+  },
+  {
+    role: 'MKT Leadership Body Manager',
+    organization: 'AIESEC in Vavuniya',
+    icon: '👥',
+  },
+  {
+    role: 'Showcasing Team',
+    organization: 'AIESEC Kandy',
+    icon: '🌟',
+  },
+  {
+    role: 'lensMedia Secretary',
+    organization: 'UniPod',
+    icon: '📷',
+  },
+  {
+    role: 'Community Member',
+    organization: 'Leo Club',
+    icon: '🦁',
+  },
+  {
+    role: 'Community Member',
+    organization: 'Zero Plastic Vavuniya Community',
+    icon: '🌱',
   }
 ];
 
@@ -117,21 +140,19 @@ export default function About() {
               ))}
             </div>
 
-            {/* Experience */}
+            {/* Leadership */}
             <div className="about__section-group">
               <h3 className="about__group-title">
-                <span>💼</span> Experience
+                <span>🌟</span> Leadership & Community
               </h3>
-              {experience.map((exp) => (
-                <div key={exp.role} className="about__timeline-item glass">
-                  <div className="about__timeline-icon">{exp.icon}</div>
+              {leadership.map((item) => (
+                <div key={item.organization + item.role} className="about__timeline-item glass">
+                  <div className="about__timeline-icon">{item.icon}</div>
                   <div className="about__timeline-content">
                     <div className="about__timeline-header">
-                      <h4>{exp.role}</h4>
-                      <span className="about__timeline-year">{exp.year}</span>
+                      <h4>{item.role}</h4>
                     </div>
-                    <p className="about__timeline-company">{exp.company}</p>
-                    <p className="about__timeline-desc">{exp.description}</p>
+                    <p className="about__timeline-company">{item.organization}</p>
                   </div>
                 </div>
               ))}

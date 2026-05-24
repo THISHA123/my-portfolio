@@ -69,23 +69,7 @@ export default function Hero() {
             Passionate about clean code, pixel-perfect design, and solving real problems.
           </p>
 
-          {/* Stats */}
-          <div className="hero__stats">
-            <div className="hero__stat">
-              <span className="hero__stat-number gradient-text">2+</span>
-              <span className="hero__stat-label">Years Experience</span>
-            </div>
-            <div className="hero__stat-divider"></div>
-            <div className="hero__stat">
-              <span className="hero__stat-number gradient-text">15+</span>
-              <span className="hero__stat-label">Projects Done</span>
-            </div>
-            <div className="hero__stat-divider"></div>
-            <div className="hero__stat">
-              <span className="hero__stat-number gradient-text">10+</span>
-              <span className="hero__stat-label">Happy Clients</span>
-            </div>
-          </div>
+
 
           {/* CTA Buttons */}
           <div className="hero__buttons">
