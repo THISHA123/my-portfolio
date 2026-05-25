@@ -61,10 +61,36 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('loading');
-    // Simulate API call
-    await new Promise((res) => setTimeout(res, 1500));
-    setStatus('success');
-    setForm({ name: '', email: '', subject: '', message: '' });
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "f7e36a25-8b77-4389-a422-6589a98feb2a", // Web3Forms access key
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setStatus('success');
+        setForm({ name: '', email: '', subject: '', message: '' });
+      } else {
+        console.error("Error from Web3Forms:", result);
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error("Submission failed:", error);
+      setStatus('error');
+    }
+
     setTimeout(() => setStatus('idle'), 4000);
   };
 
@@ -82,7 +108,7 @@ export default function Contact() {
           {/* Left — Info */}
           <div className="contact__info">
             <div className="contact__info-card glass">
-              <h3>Let's Talk! 🤝</h3>
+              <h3>Let's Talk!</h3>
               <p>
                 I'm always excited to discuss new projects, creative ideas, or opportunities to be part of something great.
                 Feel free to reach out — I usually respond within 24 hours!
@@ -123,7 +149,7 @@ export default function Contact() {
           {/* Right — Form */}
           <div className="contact__form-wrapper">
             <form className="contact__form glass" onSubmit={handleSubmit}>
-              <h3>Send a Message 💌</h3>
+              <h3>Send a Message</h3>
 
               <div className="contact__form-row">
                 <div className="contact__field">
@@ -189,7 +215,7 @@ export default function Contact() {
                     Sending...
                   </>
                 ) : status === 'success' ? (
-                  <>✅ Message Sent!</>
+                  <>Message Sent!</>
                 ) : (
                   <>
                     Send Message

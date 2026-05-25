@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
 
           {/* Greeting */}
-          <p className="hero__greeting">Hi there, I'm 👋</p>
+          <p className="hero__greeting">Hi there, I'm</p>
 
           {/* Name */}
           <h1 className="hero__name">
@@ -122,13 +122,13 @@ export default function Hero() {
             </div>
             {/* Floating Badges */}
             <div className="hero__badge-float hero__badge-float--1">
-              <span>⚛️</span> React
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" width="20" height="20" /> React
             </div>
             <div className="hero__badge-float hero__badge-float--2">
-              <span>🎨</span> Design
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Design" width="20" height="20" /> Design
             </div>
             <div className="hero__badge-float hero__badge-float--3">
-              <span>🚀</span> Node.js
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" width="20" height="20" /> Node.js
             </div>
           </div>
         </div>

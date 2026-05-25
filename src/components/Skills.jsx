@@ -22,26 +22,26 @@ const skillCategories = [
 
 const skills = [
   // Frontend
-  { name: 'React', icon: '⚛️', level: 90, category: 'frontend', color: '#61dafb' },
-  { name: 'JavaScript', icon: '🟨', level: 88, category: 'frontend', color: '#f7df1e' },
-  { name: 'TypeScript', icon: '🔷', level: 75, category: 'frontend', color: '#3178c6' },
-  { name: 'HTML5', icon: '🌐', level: 95, category: 'frontend', color: '#e34c26' },
-  { name: 'CSS3', icon: '🎨', level: 90, category: 'frontend', color: '#1572b6' },
-  { name: 'Next.js', icon: '▲', level: 70, category: 'frontend', color: '#ffffff' },
-  { name: 'Tailwind', icon: '💨', level: 80, category: 'frontend', color: '#06b6d4' },
+  { name: 'React', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" width="24" height="24" />, level: 90, category: 'frontend', color: '#61dafb' },
+  { name: 'JavaScript', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" width="24" height="24" />, level: 88, category: 'frontend', color: '#f7df1e' },
+  { name: 'TypeScript', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" width="24" height="24" />, level: 75, category: 'frontend', color: '#3178c6' },
+  { name: 'HTML5', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" width="24" height="24" />, level: 95, category: 'frontend', color: '#e34c26' },
+  { name: 'CSS3', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" width="24" height="24" />, level: 90, category: 'frontend', color: '#1572b6' },
+  { name: 'Next.js', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" width="24" height="24" style={{ filter: 'invert(1)' }} />, level: 70, category: 'frontend', color: '#ffffff' },
+  { name: 'Tailwind', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" width="24" height="24" />, level: 80, category: 'frontend', color: '#06b6d4' },
   // Backend
-  { name: 'Node.js', icon: '🟢', level: 82, category: 'backend', color: '#68a063' },
-  { name: 'Express.js', icon: '🚂', level: 80, category: 'backend', color: '#999999' },
-  { name: 'Python', icon: '🐍', level: 70, category: 'backend', color: '#3776ab' },
-  { name: 'MongoDB', icon: '🍃', level: 78, category: 'backend', color: '#47a248' },
-  { name: 'MySQL', icon: '🐬', level: 72, category: 'backend', color: '#00758f' },
-  { name: 'REST APIs', icon: '🔌', level: 85, category: 'backend', color: '#ff6b6b' },
+  { name: 'Node.js', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" width="24" height="24" />, level: 82, category: 'backend', color: '#68a063' },
+  { name: 'Express.js', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express" width="24" height="24" style={{ filter: 'invert(1)' }} />, level: 80, category: 'backend', color: '#999999' },
+  { name: 'Python', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" width="24" height="24" />, level: 70, category: 'backend', color: '#3776ab' },
+  { name: 'MongoDB', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="24" height="24" />, level: 78, category: 'backend', color: '#47a248' },
+  { name: 'MySQL', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" width="24" height="24" />, level: 72, category: 'backend', color: '#00758f' },
+  { name: 'REST APIs', icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>, level: 85, category: 'backend', color: '#ff6b6b' },
   // Tools
-  { name: 'Git & GitHub', icon: '🐱', level: 88, category: 'tools', color: '#f1502f' },
-  { name: 'VS Code', icon: '💻', level: 95, category: 'tools', color: '#007acc' },
-  { name: 'Figma', icon: '🎭', level: 70, category: 'tools', color: '#f24e1e' },
-  { name: 'Docker', icon: '🐳', level: 55, category: 'tools', color: '#2496ed' },
-  { name: 'Postman', icon: '📬', level: 85, category: 'tools', color: '#ff6c37' },
+  { name: 'Git & GitHub', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" width="24" height="24" style={{ filter: 'invert(1)' }} />, level: 88, category: 'tools', color: '#f1502f' },
+  { name: 'VS Code', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" width="24" height="24" />, level: 95, category: 'tools', color: '#007acc' },
+  { name: 'Figma', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" width="24" height="24" />, level: 70, category: 'tools', color: '#f24e1e' },
+  { name: 'Docker', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" width="24" height="24" />, level: 55, category: 'tools', color: '#2496ed' },
+  { name: 'Postman', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman" width="24" height="24" />, level: 85, category: 'tools', color: '#ff6c37' },
 ];
 
 export default function Skills() {
