@@ -431,4 +431,9 @@
   .hero__stats { justify-content: center; }
   .hero__buttons { justify-content: center; }
   .hero__socials { justify-content: center; }
+
+  /* Hide scroll cue on mobile — avoids overlap with social icons */
+  .hero__scroll {
+    display: none;
+  }
 }
