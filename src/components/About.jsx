@@ -65,14 +65,14 @@ export default function About() {
           {/* Bio Card */}
           <div className="about__bio glass">
             <div className="about__bio-img">
-              <img src={profileImg} alt="Thamilselvam Disandani" />
+              <img src={profileImg} alt="Thamilselvam Thishanthani" />
               <div className="about__bio-badge">
                 <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></span>
                 <span>Dev</span>
               </div>
             </div>
             <div className="about__bio-info">
-              <h3>Thamilselvam Disandani</h3>
+              <h3>Thamilselvam Thishanthani</h3>
               <p className="about__bio-role gradient-text">Full Stack Developer | Aspiring DevOps & Cloud Engineer</p>
               <div className="about__bio-details">
                 <div className="about__bio-detail">

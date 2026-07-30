@@ -53,7 +53,7 @@ export default function Hero() {
 
           {/* Name */}
           <h1 className="hero__name">
-            <span className="gradient-text">Thamilselvam Disandani</span>
+            <span className="gradient-text">Thamilselvam Thishanthani</span>
           </h1>
 
           {/* Typewriter Role */}
@@ -116,7 +116,7 @@ export default function Hero() {
             <div className="hero__avatar-ring"></div>
             <div className="hero__avatar-ring hero__avatar-ring--2"></div>
             <div className="hero__avatar">
-              <img src={profileImg} alt="Thamilselvam Disandani - Developer" />
+              <img src={profileImg} alt="Thamilselvam Thishanthani - Developer" />
             </div>
             {/* Floating Badges */}
             <div className="hero__badge-float hero__badge-float--1">
