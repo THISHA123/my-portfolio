@@ -52,7 +52,7 @@ export default function Footer() {
               <span className="gradient-text">selvam</span>
               <span style={{ color: 'var(--text-muted)' }}>/&gt;</span>
             </a>
-            <p>Building digital experiences with passion, precision, and a whole lot of coffee.</p>
+            <p>Full Stack Developer | Aspiring DevOps & Cloud Engineer</p>
           </div>
 
           {/* Links */}
@@ -90,7 +90,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="footer__bottom">
-          <p>© {currentYear} <span className="gradient-text">Thamilselvam Thishanthani</span>. All rights reserved.</p>
+          <p>© {currentYear} <span className="gradient-text">Thamilselvam Disandani</span>. All rights reserved.</p>
           <p>Crafted with love using React + Vite</p>
           <button className="footer__scroll-top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} title="Back to top">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" width="16" height="16">

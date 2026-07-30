@@ -3,7 +3,7 @@ import profileImg from '../assets/my1.jpeg';
 const education = [
   {
     degree: 'BSc in Information Technology',
-    school: '',
+    school: 'University of Vavuniya',
     year: '2023 - 2026',
     icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>,
   },
@@ -65,15 +65,15 @@ export default function About() {
           {/* Bio Card */}
           <div className="about__bio glass">
             <div className="about__bio-img">
-              <img src={profileImg} alt="Thamilselvam Thishanthani" />
+              <img src={profileImg} alt="Thamilselvam Disandani" />
               <div className="about__bio-badge">
                 <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></span>
                 <span>Dev</span>
               </div>
             </div>
             <div className="about__bio-info">
-              <h3>Thamilselvam Thishanthani</h3>
-              <p className="about__bio-role gradient-text">Full Stack Developer</p>
+              <h3>Thamilselvam Disandani</h3>
+              <p className="about__bio-role gradient-text">Full Stack Developer | Aspiring DevOps & Cloud Engineer</p>
               <div className="about__bio-details">
                 <div className="about__bio-detail">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -116,14 +116,10 @@ export default function About() {
             <div className="about__paragraph glass">
               <h3>Who Am I?</h3>
               <p>
-                I'm a passionate <strong>Full Stack Developer</strong> with a love for creating elegant,
-                high-performance web applications. I enjoy turning complex problems into simple,
-                beautiful, and intuitive digital experiences.
+                I'm a passionate <strong>Full Stack Developer</strong> recently graduated with a BSc in Information Technology from the University of Vavuniya. I am currently transitioning into DevOps and Cloud Engineering, exploring technologies like Linux, Docker, Git, CI/CD, and Microsoft Azure.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing to open source,
-                or sipping coffee while planning my next project. I believe in writing clean, maintainable code
-                and never stop learning.
+                My ultimate goal is to combine my software development background with DevOps practices to build, deploy, and maintain reliable and highly scalable applications in the cloud.
               </p>
             </div>
 
@@ -149,7 +145,7 @@ export default function About() {
             {/* Leadership */}
             <div className="about__section-group">
               <h3 className="about__group-title">
-                Leadership & Community
+                Leadership & Community Experience
               </h3>
               {leadership.map((item) => (
                 <div key={item.organization + item.role} className="about__timeline-item glass">
@@ -162,6 +158,33 @@ export default function About() {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Certifications */}
+            <div className="about__section-group">
+              <h3 className="about__group-title">Certifications (In Progress)</h3>
+              <div className="about__timeline-item glass">
+                <div className="about__timeline-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 15l8-4.5-8-4.5-8 4.5 8 4.5z"/><path d="M12 15v7M4 10.5v7M20 10.5v7"/></svg>
+                </div>
+                <div className="about__timeline-content">
+                  <div className="about__timeline-header">
+                    <h4>Linux Foundation Training</h4>
+                  </div>
+                  <p>In preparation</p>
+                </div>
+              </div>
+              <div className="about__timeline-item glass">
+                <div className="about__timeline-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </div>
+                <div className="about__timeline-content">
+                  <div className="about__timeline-header">
+                    <h4>Microsoft Azure Certifications</h4>
+                  </div>
+                  <p>In preparation</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

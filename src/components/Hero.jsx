@@ -4,9 +4,8 @@ import profileImg from '../assets/my1.jpeg';
 
 const roles = [
   'Full Stack Developer',
-  'React Developer',
-  'UI/UX Enthusiast',
-  'Problem Solver',
+  'Aspiring DevOps & Cloud Engineer',
+  'Continuous Learner',
 ];
 
 export default function Hero() {
@@ -54,7 +53,7 @@ export default function Hero() {
 
           {/* Name */}
           <h1 className="hero__name">
-            <span className="gradient-text">Thamilselvam Thishanthani</span>
+            <span className="gradient-text">Thamilselvam Disandani</span>
           </h1>
 
           {/* Typewriter Role */}
@@ -65,8 +64,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="hero__description">
-            I craft beautiful, performant web experiences with modern technologies.
-            Passionate about clean code, pixel-perfect design, and solving real problems.
+            I am a Full Stack Developer passionate about building modern web applications and exploring DevOps, Cloud Infrastructure, and automation technologies.
           </p>
 
 
@@ -118,7 +116,7 @@ export default function Hero() {
             <div className="hero__avatar-ring"></div>
             <div className="hero__avatar-ring hero__avatar-ring--2"></div>
             <div className="hero__avatar">
-              <img src={profileImg} alt="Thamilselvam Thishanthani - Developer" />
+              <img src={profileImg} alt="Thamilselvam Disandani - Developer" />
             </div>
             {/* Floating Badges */}
             <div className="hero__badge-float hero__badge-float--1">
